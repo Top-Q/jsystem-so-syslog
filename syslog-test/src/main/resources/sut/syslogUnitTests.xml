@@ -1,0 +1,28 @@
+<sut>
+	<syslog>		
+	
+		<conn>
+			<class>com.aqua.sysobj.conn.ConnectivityManager</class>
+			<cli>
+				<class>com.aqua.syslog.SyslogConnection</class>
+				<useTelnetInputStream>true</useTelnetInputStream>
+				<login>temp</login>
+				<password>temp</password>
+				<suPassword>nushnush</suPassword>
+				<host>10.230.44.52</host>
+			</cli>
+		</conn>
+			
+		<class>com.aqua.syslog.Syslog</class>
+		<logFile>/usr/tmp/setup_44_syslog.log</logFile>	
+		<ftpServer>10.230.44.52</ftpServer>
+		<ftpUsername>temp</ftpUsername>
+		<ftpPassword>temp</ftpPassword>
+		
+<!-- 		<syslogFuncDirectory>/etc/init.d/syslog</syslogFuncDirectory> -->
+		<syslogScriptFile>/etc/init.d/syslog</syslogScriptFile>
+		<syslogConfFile1>/etc/syslog.conf</syslogConfFile1>		
+		<syslogConfFile2>/etc/sysconfig/syslog</syslogConfFile2>		
+
+	</syslog>
+</sut>
